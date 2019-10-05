@@ -1,0 +1,91 @@
+
+header
+{
+
+    display: flex;/* placer les éléments de mon header mans le sens  horizontal*/
+    justify-content: space-between;/*pour étirer sur tout l'axe (mettre l'espace entre eux)*/
+    align-items: flex-end;/*alignés à la fin*/
+}
+h1
+
+{
+    font-family: serif;/*pour la police*/
+    font-size: 4em;/* la taille de la police*/
+	text-transform: uppercase;/* met tous les titre h1 en majuscule*/
+	text-align: center;/* centre les tites h1*/
+	background-color:RGB(255,204,230);/*une coleur bacground pour le titre h1*/
+}
+
+nav ul
+{
+    list-style-type: none;/* permet de supprimer les lices à puce*/
+    display: flex;/* permrt de disposer les elements cote à cote*/
+}
+nav li
+{
+    margin-right: 15px;/* marge à droite de 15 px entre les li*/
+}
+nav a
+{
+    font-size: 1.3em;/*taille de la police*/
+    color: #181840;
+    padding-bottom: 3px;/*marge en dessous*/
+    text-decoration: none;
+}
+body
+{
+	 width: 1100px;/*valeur par defaut du body*/
+     margin: auto;
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px){/* pour adapter à chaque ecran l'utilisateur peut reduire la taille de l'ecran comme il veut et tous les éléments resteraient visibles*/
+
+    body {
+        width: auto;/*d'out l'utilisation de la valeur auto*/
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+
+#disposition, select{
+    display: flex;
+    justify-content: space-between;
+}
+p
+ {
+    text-align: center;
+}
+
+input[type=submit] {
+    width: 80px;
+    background-color: RGB(255,204,230);
+    cursor: pointer;
+  
+}
+#age
+{
+    margin-right: 33%;
+    margin-left: 33%;
+}
+
+#corpform
+{
+    text-align: center;
+
+}
+#ajout
+{
+        margin-left: 28%;
+
+}
+#jeu
+{
+    margin-right: 41%;
+    margin-left: 41%;
+}
+
